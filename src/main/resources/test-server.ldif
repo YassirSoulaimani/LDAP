@@ -1,0 +1,41 @@
+dn: dc=springframework,dc=org
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: springframework
+
+dn: ou=students,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: students
+
+dn: ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=yassir,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Yassir
+sn: Soulaimani
+uid: yassir
+userPassword: yassirpass
+
+dn: uid=asas,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Mike
+sn: Hus
+uid: asas
+userPassword: asaspass
+
+dn: cn=admin,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: admin
+uniqueMember: uid=yassir,ou=people,dc=springframework,dc=org
